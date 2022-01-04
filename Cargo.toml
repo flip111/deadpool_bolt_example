@@ -6,9 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bolt-client = { version = "0.10.1", features = ["tokio-stream"] }
+bolt-client = "0.10.1"
 deadpool = "0.9.2"
 deadpool-bolt = "0.1.0"
-futures = "0.3.19"
-tokio = "1.15.0"
-tokio-util = { version = "0.6.9", features = ["compat"] }
+tokio = { version = "1.15.0", features = ["macros", "rt-multi-thread"] }
